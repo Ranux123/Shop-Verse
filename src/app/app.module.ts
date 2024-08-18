@@ -11,13 +11,16 @@ import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTableModule } from '@angular/material/table';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatBadgeModule } from '@angular/material/badge';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +36,7 @@ import { AppComponent } from './app.component';
     MatToolbarModule,
     MatTableModule,
     MatSnackBarModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
