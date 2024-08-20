@@ -19,13 +19,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductHeaderComponent } from './pages/home/components/product-header/product-header.component';
+import { FiltersComponent } from './pages/home/components/filters/filters.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    ProductHeaderComponent
+    ProductHeaderComponent,
+    FiltersComponent
   ],
   imports: [
     BrowserModule,
