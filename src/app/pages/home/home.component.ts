@@ -6,9 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-cols = 3;
+  cols = 3;
+  category: string | undefined;
 
-onColumnsCountChange(colsNumber: number): void {
-  this.cols = colsNumber;
-}
+  columnsCountChange(colsNumber: number): void {
+    this.cols = colsNumber;
+  }
+
+  onShowCategory(newCategory: string): void {
+    this.category = newCategory;
+  }
 }

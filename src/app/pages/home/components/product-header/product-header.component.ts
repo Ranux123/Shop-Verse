@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, Output } from '@angular/core';
+import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-product-header',
@@ -18,7 +19,7 @@ export class ProductHeaderComponent {
     this.itemsShowCount = newItemsCount;
   }
 
-  onColumnsUpdate(newColumnsCount: number): void {
-    this.columnsCountChange.emit(newColumnsCount);
+  onColumnsUpdate(colsNumber: number): void {
+    this.columnsCountChange.emit(colsNumber);
   }
 }
