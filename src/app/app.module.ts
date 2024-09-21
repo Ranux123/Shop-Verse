@@ -20,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductHeaderComponent } from './pages/home/components/product-header/product-header.component';
 import { FiltersComponent } from './pages/home/components/filters/filters.component';
+import { ProductBoxComponent } from './pages/home/components/product-box/product-box.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FiltersComponent } from './pages/home/components/filters/filters.compon
     HeaderComponent,
     HomeComponent,
     ProductHeaderComponent,
-    FiltersComponent
+    FiltersComponent,
+    ProductBoxComponent
   ],
   imports: [
     BrowserModule,
